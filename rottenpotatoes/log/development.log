@@ -493,3 +493,263 @@ Started GET "/assets/application.self.css?body=1" for ::1 at 2015-07-23 13:57:16
 
 
 Started GET "/assets/application.self.js?body=1" for ::1 at 2015-07-23 13:57:16 -0700
+
+
+Started GET "/assets/rails.png" for 93.72.199.161 at 2015-11-22 17:36:05 +0000
+
+
+Started GET "/assets/rails.png" for 93.72.199.161 at 2015-11-22 17:36:15 +0000
+
+
+Started GET "/movies" for 93.72.199.161 at 2015-11-22 17:36:29 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (93.0ms)
+Completed 200 OK in 292ms (Views: 268.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:36:29 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:29 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:29 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:29 +0000
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BNC-17%5D=1&ratings%5BR%5D=1&commit=Refresh" for 93.72.199.161 at 2015-11-22 17:36:41 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "NC-17"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+Redirected to https://learning-saas-advcodelrn.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 93.72.199.161 at 2015-11-22 17:36:41 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:36:41 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:41 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:41 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:41 +0000
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&commit=Refresh" for 93.72.199.161 at 2015-11-22 17:36:47 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to https://learning-saas-advcodelrn.c9.io/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1" for 93.72.199.161 at 2015-11-22 17:36:48 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')[0m
+  Rendered movies/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:36:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:48 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:48 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:48 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title" for 93.72.199.161 at 2015-11-22 17:36:51 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"title"}
+Redirected to https://learning-saas-advcodelrn.c9.io/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title" for 93.72.199.161 at 2015-11-22 17:36:51 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (78.8ms)
+Completed 200 OK in 100ms (Views: 97.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:36:51 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:51 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:51 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:51 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=release_date" for 93.72.199.161 at 2015-11-22 17:36:53 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"release_date"}
+Redirected to https://learning-saas-advcodelrn.c9.io/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=release_date
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=release_date" for 93.72.199.161 at 2015-11-22 17:36:53 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (16.8ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:36:53 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:53 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:53 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:53 +0000
+
+
+Started GET "/movies/1" for 93.72.199.161 at 2015-11-22 17:36:59 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 26ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:36:59 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:59 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:59 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:36:59 +0000
+
+
+Started GET "/movies" for 93.72.199.161 at 2015-11-22 17:37:03 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://learning-saas-advcodelrn.c9.io/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=release_date" for 93.72.199.161 at 2015-11-22 17:37:03 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:37:04 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:04 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:04 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:04 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title" for 93.72.199.161 at 2015-11-22 17:37:06 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"title"}
+Redirected to https://learning-saas-advcodelrn.c9.io/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title" for 93.72.199.161 at 2015-11-22 17:37:06 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:37:06 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:06 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:06 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:06 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=release_date" for 93.72.199.161 at 2015-11-22 17:37:08 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"release_date"}
+Redirected to https://learning-saas-advcodelrn.c9.io/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=release_date
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=release_date" for 93.72.199.161 at 2015-11-22 17:37:08 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:37:08 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:08 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:08 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:08 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title" for 93.72.199.161 at 2015-11-22 17:37:11 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"title"}
+Redirected to https://learning-saas-advcodelrn.c9.io/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title" for 93.72.199.161 at 2015-11-22 17:37:11 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-11-22 17:37:11 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:11 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:11 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-11-22 17:37:11 +0000
